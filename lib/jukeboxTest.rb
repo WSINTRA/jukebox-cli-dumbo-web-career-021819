@@ -61,5 +61,6 @@ when "exit"
   exit_jukebox()
 end
 end
+puts "Goodbye"
 end
 run(songs)
