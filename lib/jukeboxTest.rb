@@ -49,7 +49,7 @@ def run(songs)
   puts "Please enter a command:"
   help
 userinput = gets.chomp.strip
-while userinput != "exit"
+while userinput
 case userinput #using a case switch for commands typed in
 when "help"
   help
