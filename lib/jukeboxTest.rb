@@ -40,17 +40,16 @@ end
 puts "Invalid input, please try again"
 end
 
-$cond = true
+
 def exit_jukebox()
   puts "Goodbye"
-  $cond = false
 end
 
 def run(songs)
   puts "Please enter a command:"
   help
-while $cond
 userinput = gets.chomp.strip
+while userinput != "exit"
 case userinput #using a case switch for commands typed in
 when "help"
   help
